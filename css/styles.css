@@ -1,0 +1,44 @@
+body {
+  background-color: hsl(212, 45%, 89%);
+}
+
+img {
+  border-radius: 8px;
+  margin-top: 0.6rem;
+  width: 92%;
+}
+
+h3 {
+  color: black;
+  font-family: "Outfit";
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  color: grey;
+  display: inline-block;
+  font-family: "Outfit";
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.attribution {
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  margin: 200px auto 50px;
+  text-align: center;
+  width: 250px;
+}
+
+.textwrapper {
+  /* height: 150px; */
+  margin: 15px 20px;
+}
