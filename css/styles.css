@@ -1,5 +1,14 @@
+:root {
+  /*colors with variables as practice*/
+  --clr-main-bg: hsl(212, 45%, 89%);
+  --clr-black: #000;
+  --clr-grey: grey;
+  --clr-white: #fff;
+  --clr-turquoise: turquoise;
+}
+
 body {
-  background-color: hsl(212, 45%, 89%);
+  background-color: var(--clr-main-bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,19 +24,19 @@ img {
 }
 
 h1 {
-  color: black;
-  font-size: 1.3rem;
+  color: var(--clr-black);
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 p {
-  color: grey;
+  color: var(--clr-grey);
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 a {
-  color: turquoise;
+  color: var(--clr-turquoise);
   text-decoration: none;
 }
 
@@ -38,10 +47,9 @@ a {
 }
 
 .card {
-  background-color: white;
-  border-radius: 12px;
+  background-color: var(--clr-white);
+  border-radius: 1rem;
   padding: 0.7rem;
   text-align: center;
-  height: 400px;
   width: 244px;
 }
