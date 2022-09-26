@@ -16,6 +16,7 @@ body {
   font-family: "Outfit";
   font-weight: 400;
   min-height: calc(100vh - 2rem);
+  min-width: 350px;
 }
 
 img {
@@ -56,9 +57,9 @@ a {
 
 @media screen and (max-width: 480px) {
   .card p {
-    padding-inline: 1rem;
+    padding-inline: 0.5rem;
   }
   h1 {
-    color:red;
+    color: var(--clr-anchor);
   }
 }
