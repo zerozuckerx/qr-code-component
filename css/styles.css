@@ -5,6 +5,8 @@
   --clr-grey: grey;
   --clr-white: #fff;
   --clr-turquoise: turquoise;
+
+  --doc-height: 100%;
 }
 
 body {
@@ -16,6 +18,7 @@ body {
   font-family: "Outfit";
   font-weight: 400;
   min-height: calc(100vh - 2rem);
+  height: var(--doc-height);
 }
 
 img {
@@ -52,4 +55,8 @@ a {
   padding: 0.7rem;
   text-align: center;
   width: 244px;
+}
+
+@media query screen only  {
+
 }
