@@ -1,16 +1,14 @@
 :root {
   /*colors with variables as practice*/
-  --clr-main-bg: hsl(212, 45%, 89%);
-  --clr-black: #000;
-  --clr-grey: grey;
-  --clr-white: #fff;
-  --clr-turquoise: turquoise;
-
-  --doc-height: 100%;
+  --clr-body-bg: hsl(212, 45%, 89%);
+  --clr-main-bg: #fff;
+  --clr-headings: #000;
+  --clr-paragraphs: grey;
+  --clr-anchor: turquoise;
 }
 
 body {
-  background-color: var(--clr-main-bg);
+  background-color: var(--clr-body-bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +16,6 @@ body {
   font-family: "Outfit";
   font-weight: 400;
   min-height: calc(100vh - 2rem);
-  height: var(--doc-height);
 }
 
 img {
@@ -27,19 +24,19 @@ img {
 }
 
 h1 {
-  color: var(--clr-black);
+  color: var(--clr-headings);
   font-size: 1.2rem;
   font-weight: 700;
 }
 
 p {
-  color: var(--clr-grey);
+  color: var(--clr-paragraphs);
   display: block;
   font-size: 0.7rem;
 }
 
 a {
-  color: var(--clr-turquoise);
+  color: var(--clr-anchor);
   text-decoration: none;
 }
 
@@ -50,13 +47,18 @@ a {
 }
 
 .card {
-  background-color: var(--clr-white);
+  background-color: var(--clr-main-bg);
   border-radius: 1rem;
   padding: 0.7rem;
   text-align: center;
   width: 244px;
 }
 
-@media query screen only  {
-
+@media screen and (max-width: 480px) {
+  .card p {
+    /* padding-inline: 1rem; */
+  }
+  h1 {
+    color:red;
+  }
 }
